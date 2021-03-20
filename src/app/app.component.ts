@@ -1,5 +1,5 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { ProductListComponent } from './product-list/product-list.component'
+import { ProductListComponent } from './catalog/product-list/product-list.component'
 import { BackendService } from './backend.service'
 
 @Component({
@@ -10,7 +10,7 @@ import { BackendService } from './backend.service'
 export class AppComponent implements OnInit {
   title = 'Lab1Part3';
 
-  constructor(private backendService: BackendService) { }
+  constructor(private backendService: BackendService) {}
   @ViewChild('productList', { static: true })
   productList: ProductListComponent;
 
